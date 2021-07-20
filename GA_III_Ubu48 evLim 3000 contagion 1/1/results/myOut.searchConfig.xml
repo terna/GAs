@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE search SYSTEM "behaviorsearch.dtd">
+<search>
+    <bsearchVersionNumber>1.10</bsearchVersionNumber>
+    <modelInfo>
+        <modelFile>SIsaR_0.9.6.nlogo</modelFile>
+        <modelSetupCommands>setup</modelSetupCommands>
+        <modelStepCommands>go</modelStepCommands>
+        <modelStopCondition/>
+        <modelStepLimit>865</modelStepLimit>
+        <modelMetricReporter>cumulativeRedCount</modelMetricReporter>
+        <modelMeasureIf>true</modelMeasureIf>
+    </modelInfo>
+    <fitnessInfo>
+        <fitnessMinimized>true</fitnessMinimized>
+        <fitnessCollecting>AT_FINAL_STEP</fitnessCollecting>
+        <fitnessSamplingReplications>1</fitnessSamplingReplications>
+        <fitnessCombineReplications>MEAN</fitnessCombineReplications>
+    </fitnessInfo>
+    <searchSpace>
+        <paramSpec>["g1t1" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g2t1" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g3t1" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g4t1" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g5t1" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g6t1" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g7t1" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g1t2" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g2t2" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g3t2" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g4t2" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g5t2" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g6t2" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g7t2" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g1t3" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g2t3" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g3t3" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g4t3" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g5t3" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g6t3" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g7t3" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g1t4" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g2t4" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g3t4" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g4t4" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g5t4" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g6t4" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g7t4" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g1t5" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g2t5" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g3t5" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g4t5" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g5t5" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g6t5" [0 0.01 1]]</paramSpec>
+        <paramSpec>["g7t5" [0 0.01 1]]</paramSpec>
+    </searchSpace>
+    <searchMethod type="StandardGA">
+        <searchMethodParameter name="mutation-rate" value="0.03"/>
+        <searchMethodParameter name="population-size" value="50"/>
+        <searchMethodParameter name="crossover-rate" value="0.7"/>
+        <searchMethodParameter name="population-model" value="generational"/>
+        <searchMethodParameter name="tournament-size" value="3"/>
+    </searchMethod>
+    <chromosomeRepresentation type="GrayBinaryChromosome"/>
+    <caching>true</caching>
+    <evaluationLimit>3000</evaluationLimit>
+    <bestCheckingNumReplications>0</bestCheckingNumReplications>
+</search>
